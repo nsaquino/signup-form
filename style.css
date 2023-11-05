@@ -1,3 +1,113 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* 
+body>main {
+    flex-grow: 0;
+} */
+
+/* Left */
+body>aside {
+    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    flex-basis: 600px;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+aside footer {
+    margin-top: auto;
+    text-align: center;
+    color: white;
+}
+
+.thanks a {
+    color: white;
+}
+
+.odin-container {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    margin-top: 12rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Norse-Bold;
+    font-size: 8rem;
+    color: white;
+}
+
+.odin-container img {
+    height: 100%;
+}
+
+/* Right */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: rgb(247, 247, 247);
+}
+
+main > * {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+main header,
+main form h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+main section {
+    background-color: white;
+    box-shadow: 3px 5px 5px rgb(216, 216, 216);
+}
+
+form {
+    display: flex;
+}
+
+label {
+    display: block;
+}
+
+button {
+    padding: 10px 40px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+
+    color: white;
+    background-color: #596D48;
+    font-weight: 700;
+}
+
+main footer {
+    font-weight: 500;
+}
+
+main footer a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
 }
